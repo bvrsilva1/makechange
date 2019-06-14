@@ -24,7 +24,17 @@ public class ResultChange {
     @Override
     public String toString() {
         return "Minimum number of coins used is " + minNumberCoins + "\n"
-                + "Coins used: " + Arrays.toString(getCoins().toArray());
+                + "Coins used: " + printCoins();
+    }
+
+    private String printCoins(){
+        StringBuilder string = new StringBuilder();
+
+        for(int coin : getCoins()){
+            string.append("0."+ coin + " ");
+        }
+
+        return string.toString();
     }
 
 }

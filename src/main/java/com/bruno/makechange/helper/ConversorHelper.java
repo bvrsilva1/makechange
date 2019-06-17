@@ -3,6 +3,9 @@ package com.bruno.makechange.helper;
 import java.util.Arrays;
 import java.util.Set;
 
+/*
+ * Helps to convert the strings into integer to help building the dynamic programming table
+ */
 public class ConversorHelper {
 
     private static final Double MULTIPLIER_FACTOR = new Double(10);
@@ -27,9 +30,9 @@ public class ConversorHelper {
 
     public static int convertStringToInt(String number){
         return convert(new Double(number) * MULTIPLIER_FACTOR);
-        //return convert(new Double(number));
     }
 
+    //removers '.' from the String and parse the string to Integer
     private static int convert(Double number){
         String doubleAsString = number.floatValue() + "";
         doubleAsString = doubleAsString.replaceAll("\\.","");

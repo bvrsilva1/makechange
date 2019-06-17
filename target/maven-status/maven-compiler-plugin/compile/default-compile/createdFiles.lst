@@ -1,0 +1,5 @@
+com/bruno/makechange/App.class
+com/bruno/makechange/service/ChangeService.class
+com/bruno/makechange/model/ResultChange.class
+com/bruno/makechange/helper/ConversorHelper.class
+com/bruno/makechange/controller/ChangeController.class

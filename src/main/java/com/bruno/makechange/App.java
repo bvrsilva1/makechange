@@ -6,12 +6,15 @@ import com.bruno.makechange.model.ResultChange;
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+ * Driver (App class) reads input arguments, does initial set up (coins to be used)
+ * Calls the responsible for calculations
+ * Prints results to user
+ */
+
 public class App {
 
     public static void main(String[] args) {
-
-        /*double coinsDouble[] = {0.0, 1.0, 3.0, 2.0};
-        double amountDouble = 7.0;*/
 
         String amountStr = args[0];
 
